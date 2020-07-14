@@ -1,0 +1,59 @@
+#Calculador em Python
+""""
+Posso usar funções para as 4 operações:
+
+def soma (x , y):
+    return x + y
+    
+print(num1 , '+' , num2, '=', soma(num1 , num2))
+
+"""""
+
+print("***********Calculadora Python************")
+print()
+
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+print()
+
+resp = "s"
+
+while resp == "s" or resp == "S":
+
+    opcao = int(input("Escolha uma opção (1/2/3/4): "))
+
+    if not((opcao == 1) or (opcao == 2) or (opcao == 3) or (opcao == 4)):
+        print("Opção inválida")
+    else:
+
+
+        num1 = int(input("Digite o primeiro número: "))
+        num2 = int(input("Digite o segundo número: "))
+
+        #VERIFICAÇÕES
+
+        if (opcao == 1):
+            soma = num1 + num2
+            print(f"A soma entre {num1} e {num2} é igual a",soma)
+
+        elif (opcao == 2):
+            sub = num1 - num2
+            print(f"A subtração entre {num1} e {num2} é igual a", sub)
+
+        elif (opcao == 3):
+            mult = num1 * num2
+            print(f"A multiplicação entre {num1} e {num2} é igual a", mult)
+
+        elif (opcao == 4):
+            divisao = num1 / num2
+            print(f"A divisão entre {num1} e {num2} é igual a", divisao)
+
+ #       else:
+ #           print("Opção inválida")
+
+    print()
+
+    resp = (input("Deseja continuar? (s/n): "))
